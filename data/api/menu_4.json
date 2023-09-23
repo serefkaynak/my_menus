@@ -1,0 +1,85 @@
+{
+    "menu": [
+      {
+        "category": "Appetizers",
+        "items": [
+          {
+            "name": "Bruschetta",
+            "description": "Toasted bread topped with diced tomatoes, garlic, and basil.",
+            "price": 8.99
+          },
+          {
+            "name": "Spinach and Artichoke Dip",
+            "description": "Creamy dip with spinach, artichokes, and melted cheese, served with tortilla chips.",
+            "price": 10.99
+          },
+          {
+            "name": "Stuffed Mushrooms",
+            "description": "Mushroom caps stuffed with a savory mixture of herbs, cheese, and breadcrumbs.",
+            "price": 9.99
+          }
+        ]
+      },
+      {
+        "category": "Salads",
+        "items": [
+          {
+            "name": "Caesar Salad",
+            "description": "Crisp romaine lettuce, croutons, parmesan cheese, and Caesar dressing.",
+            "price": 11.99
+          },
+          {
+            "name": "Greek Salad",
+            "description": "Fresh mixed greens, tomatoes, cucumbers, feta cheese, olives, and Greek dressing.",
+            "price": 12.99
+          },
+          {
+            "name": "Caprese Salad",
+            "description": "Slices of fresh mozzarella, tomatoes, and basil, drizzled with balsamic glaze.",
+            "price": 10.99
+          }
+        ]
+      },
+      {
+        "category": "Main Courses",
+        "items": [
+          {
+            "name": "Grilled Salmon",
+            "description": "Grilled salmon fillet served with a lemon butter sauce and steamed vegetables.",
+            "price": 19.99
+          },
+          {
+            "name": "Chicken Alfredo",
+            "description": "Grilled chicken breast served over fettuccine pasta with creamy Alfredo sauce.",
+            "price": 15.99
+          },
+          {
+            "name": "Beef Tenderloin",
+            "description": "Tender beef tenderloin steak served with garlic mashed potatoes and asparagus.",
+            "price": 24.99
+          }
+        ]
+      },
+      {
+        "category": "Desserts",
+        "items": [
+          {
+            "name": "Chocolate Lava Cake",
+            "description": "Warm chocolate cake with a gooey chocolate center, topped with vanilla ice cream.",
+            "price": 8.99
+          },
+          {
+            "name": "Tiramisu",
+            "description": "Layered Italian dessert made with coffee-soaked ladyfingers and mascarpone cheese.",
+            "price": 9.99
+          },
+          {
+            "name": "Cheesecake",
+            "description": "Creamy New York-style cheesecake with your choice of fruit topping.",
+            "price": 7.99
+          }
+        ]
+      }
+    ]
+  }
+  

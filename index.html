@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurants</title>
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+</head>
+<body>
+    <h1>Restoranlar</h1>
+    <div id="restaurants-container">
+        
+    </div>
+
+    <script src="/data/dataAccess/restaurant.js"></script>
+    <script>
+        let data_restaurants;
+
+        async function generateRestaurantsHtml() {
+            data_restaurants = await getRestaurants();
+            let innerHtml = '<ul>';
+            for (let i = 0; i < data_restaurants.length; i++) {
+                const data_restaurant = data_restaurants[i];
+                let temp_li = '<li>';
+                temp_li +=`<span>${data_restaurant.name}</span>`;
+                temp_li +=` - <a href="/menu.html?restaurantId=${data_restaurant.id}" target="_blank">link</a>`;
+                temp_li +=`<div id="restaurant_qr_${i+1}"></div>`;
+                temp_li +='</li>';
+                innerHtml += temp_li;
+            }
+            innerHtml += '</ul>';
+            return innerHtml;
+        }
+
+        function putRestaurantHtml(html) {
+            document.getElementById('restaurants-container').innerHTML = html;
+        }
+
+        function putQrCodes() {
+            for (let i = 0; i < data_restaurants.length; i++) {
+                const data_restaurant = data_restaurants[i];
+                let qr_code_id = `restaurant_qr_${i+1}`;
+                new QRCode(document.getElementById(qr_code_id), `http://127.0.0.1:5500/menu.html?restaurantId=${data_restaurant.id}`);
+            }
+        }
+
+        async function initialize(){
+            let html = await generateRestaurantsHtml();
+            putRestaurantHtml(html);
+            putQrCodes();
+        }
+
+        initialize();
+    </script>
+</body>
+</html>

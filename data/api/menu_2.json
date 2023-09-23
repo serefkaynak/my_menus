@@ -1,0 +1,84 @@
+{
+  "menu": [
+    {
+      "category": "Appetizers",
+      "items": [
+        {
+          "name": "Mozzarella Sticks",
+          "description": "Deep-fried mozzarella sticks served with marinara sauce.",
+          "price": 8.99
+        },
+        {
+          "name": "Spinach Artichoke Dip",
+          "description": "Creamy spinach and artichoke dip served with tortilla chips.",
+          "price": 7.99
+        },
+        {
+          "name": "Bruschetta",
+          "description": "Toasted baguette slices topped with diced tomatoes, basil, and garlic.",
+          "price": 6.99
+        }
+      ]
+    },
+    {
+      "category": "Salads",
+      "items": [
+        {
+          "name": "Caesar Salad",
+          "description": "Crisp romaine lettuce, croutons, parmesan cheese, and Caesar dressing.",
+          "price": 9.99
+        },
+        {
+          "name": "Greek Salad",
+          "description": "Mixed greens, cucumbers, tomatoes, olives, feta cheese, and Greek dressing.",
+          "price": 10.99
+        },
+        {
+          "name": "Caprese Salad",
+          "description": "Fresh mozzarella, tomatoes, basil, balsamic glaze, and olive oil.",
+          "price": 11.99
+        }
+      ]
+    },
+    {
+      "category": "Main Courses",
+      "items": [
+        {
+          "name": "Chicken Alfredo",
+          "description": "Grilled chicken breast served over fettuccine with Alfredo sauce.",
+          "price": 15.99
+        },
+        {
+          "name": "Beef Tenderloin",
+          "description": "Grilled beef tenderloin with garlic mashed potatoes and asparagus.",
+          "price": 19.99
+        },
+        {
+          "name": "Vegetable Stir-Fry",
+          "description": "Assorted vegetables stir-fried in a savory sauce, served over rice.",
+          "price": 12.99
+        }
+      ]
+    },
+    {
+      "category": "Desserts",
+      "items": [
+        {
+          "name": "Chocolate Lava Cake",
+          "description": "Warm chocolate cake with a molten chocolate center, topped with vanilla ice cream.",
+          "price": 7.99
+        },
+        {
+          "name": "Cheesecake",
+          "description": "Classic New York-style cheesecake with a choice of topping.",
+          "price": 6.99
+        },
+        {
+          "name": "Tiramisu",
+          "description": "Coffee-soaked ladyfingers layered with mascarpone cheese and cocoa powder.",
+          "price": 8.99
+        }
+      ]
+    }
+  ]
+}

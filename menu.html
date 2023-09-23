@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>restoran Adı</title>
+    <script src="utils.js"></script>
+    <script src="data/dataAccess/menu.js"></script>
+    <script>
+        let restaurantId =  getDataFromQueryString('restaurantId');
+        console.log(restaurantId);
+    </script>
+</head>
+<body>
+    <h1 id="restaurantName"></h1>
+    <div id="menu-container">
+        
+    </div>
+    <script>
+    
+
+        async function generateMenuHtml(){
+             let restaurant_json = await getRestaurantMenu(restaurantId);
+             let menu = restaurant_json.menu;
+            //loop for category
+            let categoryHtml = '<ul>';
+            for (let i = 0; i < menu.length; i++) {
+                const menuCategory = menu[i];
+                const categoryName = menuCategory.category;
+                let temp_li ='<li>'
+                    temp_li += `<h2>${categoryName}</h2></br>`;
+                    temp_li += generateCategoryMenuItems(menuCategory.items);
+                temp_li +='</li>'
+                categoryHtml += temp_li;
+            }
+            categoryHtml +='</ul>';    
+
+            return categoryHtml;
+        }
+
+
+        function generateCategoryMenuItems(items) {
+            let itemsHtml = '<ol>';
+            for (let i = 0; i < items.length; i++) {
+                const item = items[i];
+                let temp_li = '<li>';
+                    temp_li += `<h3>${item.name}</h3>`;
+                    temp_li += `<span>${item.description}</span>`; 
+                    temp_li += `<h3>${item.price}</h3>`;
+                temp_li += '</li>';
+                itemsHtml += temp_li;
+            }
+            itemsHtml += '</ol>';
+
+            return itemsHtml;
+        }
+
+
+
+        async function putMenuInfo(html){
+            document.getElementById('menu-container').innerHTML = html;
+        }
+
+
+
+        async function initialize() {
+            let html = await generateMenuHtml();
+            putMenuInfo(html);
+        }
+
+        initialize();
+
+    </script>
+
+</body>
+</html>

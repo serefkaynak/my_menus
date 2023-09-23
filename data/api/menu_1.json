@@ -1,0 +1,104 @@
+{
+  "menu": [
+    {
+      "category": "Appetizers",
+      "items": [
+        {
+          "name": "Garlic Bread",
+          "description": "Toasted baguette slices with garlic butter",
+          "price": 5.99
+        },
+        {
+          "name": "Spinach and Artichoke Dip",
+          "description": "Creamy dip with spinach, artichokes, and melted cheese",
+          "price": 7.99
+        },
+        {
+          "name": "Mozzarella Sticks",
+          "description": "Fried mozzarella cheese sticks served with marinara sauce",
+          "price": 6.99
+        }
+      ]
+    },
+    {
+      "category": "Salads",
+      "items": [
+        {
+          "name": "Caesar Salad",
+          "description": "Romaine lettuce, croutons, Parmesan cheese, and Caesar dressing",
+          "price": 8.99
+        },
+        {
+          "name": "Greek Salad",
+          "description": "Mixed greens, Kalamata olives, feta cheese, and Greek dressing",
+          "price": 9.99
+        },
+        {
+          "name": "Cobb Salad",
+          "description": "Mixed greens, grilled chicken, bacon, avocado, and ranch dressing",
+          "price": 10.99
+        }
+      ]
+    },
+    {
+      "category": "Pasta",
+      "items": [
+        {
+          "name": "Spaghetti Carbonara",
+          "description": "Spaghetti with creamy bacon and egg sauce",
+          "price": 12.99
+        },
+        {
+          "name": "Chicken Alfredo",
+          "description": "Fettuccine pasta with grilled chicken and Alfredo sauce",
+          "price": 13.99
+        },
+        {
+          "name": "Vegetable Primavera",
+          "description": "Penne pasta with assorted vegetables in a garlic cream sauce",
+          "price": 11.99
+        }
+      ]
+    },
+    {
+      "category": "Pizza",
+      "items": [
+        {
+          "name": "Margherita Pizza",
+          "description": "Tomato sauce, fresh mozzarella, basil, and olive oil",
+          "price": 14.99
+        },
+        {
+          "name": "Pepperoni Pizza",
+          "description": "Tomato sauce, mozzarella cheese, and pepperoni slices",
+          "price": 13.99
+        },
+        {
+          "name": "Hawaiian Pizza",
+          "description": "Tomato sauce, mozzarella cheese, ham, and pineapple",
+          "price": 15.99
+        }
+      ]
+    },
+    {
+      "category": "Desserts",
+      "items": [
+        {
+          "name": "New York Cheesecake",
+          "description": "Creamy cheesecake with a graham cracker crust",
+          "price": 6.99
+        },
+        {
+          "name": "Chocolate Lava Cake",
+          "description": "Warm chocolate cake with a molten chocolate center",
+          "price": 7.99
+        },
+        {
+          "name": "Tiramisu",
+          "description": "Italian dessert made with coffee-soaked ladyfingers and mascarpone cheese",
+          "price": 8.99
+        }
+      ]
+    }
+  ]
+}
